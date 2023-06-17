@@ -1,0 +1,17 @@
+
+<div class="Upload">
+
+    <b><h3>Upload old  Text File</h3></b>
+<div class="input">
+    <input  type="file" (change)="onFileselected($event.target.files)">  
+   
+    <button  (click)="uploadfile()">Upload</button>
+</div>
+     
+
+  
+  <div class="Download" *ngIf="showTable" >
+    <h3>New Text File</h3>
+    <button   (click)="Download()">Download</button>
+  </div>
+</div>
